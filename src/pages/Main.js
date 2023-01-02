@@ -3,6 +3,7 @@ import Coder from '../components/Animation/Coder'
 import Zoom from 'react-reveal/Zoom'
 import { main } from '../portfolio'
 import './Main.css'
+import resume from './Vicky-Anand-Resume.pdf'
 
 function Main() {
   return (
@@ -17,9 +18,9 @@ function Main() {
                 </h1>
                 <h1 className="main-title d">{main.doamin}</h1>
                 <a
-                  href={main.resume}
-                  target="_blank"
+                  href={resume}
                   className="btn btn-lg hide"
+                  download="Vicky_Anand_Resume"
                 >
                   <span>RESUME</span>
                 </a>
