@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Agustina";
+  src: local("Agustina"), url("Agustina.woff") format("woff2");
+  font-weight: bold;
+}
+
+.navbarX {
+  background-image: var(--grad);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0px 1px 20px rgba(51, 51, 51, 0.6);
+}
+
+div .navbar-logoX {
+  text-decoration: none;
+  color: var(--s_color);
+  justify-self: start;
+  margin-left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.5rem;
+  /* font-family: "WindSong", cursive; */
+  font-family: "Agustina";
+  transform: rotate(-5deg);
+  font-weight: 500;
+}
+
+.fontX {
+  font-family: "Agustina";
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.nav-menuX {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 85vw;
+  justify-content: end;
+  margin-right: 0;
+  z-index: 99;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav .nav-itemX {
+  font-size: 20px;
+  padding-top: 13px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+nav .nav-linksX {
+  text-decoration: none;
+  color: var(--s_color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav .nav-linksX:hover {
+  text-decoration: none;
+  background-color: var(--p_color);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: var(--s_color);
+  padding: 0;
+}
+
+.nav-links-mobileX {
+  display: none;
+}
+
+.menu-iconX {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItemsX {
+    position: relative;
+  }
+  .navbarX {
+    height: 80px;
+  }
+  .nav-menuX {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+  }
+
+  .nav-menuX.activeX {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+  }
+
+  .nav-linksX {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-linksX:hover {
+    background-color: var(--p_color);
+    border-radius: 0;
+  }
+
+  .navbar-logoX {
+    position: absolute;
+    top: 5;
+    left: 0;
+
+    transform: rotate(-10deg);
+  }
+
+  .menu-iconX {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 50px;
+
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-timesX {
+    color: var(--s_color);
+    font-size: 2rem;
+  }
+
+  .nav-links-mobileX {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: var(--p_color);
+    text-decoration: none;
+    color: var(--s_color);
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobileX:hover {
+    background: var(--s_color);
+    color: var(--p_color);
+    transition: 250ms;
+  }
+  .nav-menuX.activeX {
+    z-index: 99;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-menuX {
+    height: 45vh;
+  }
+}

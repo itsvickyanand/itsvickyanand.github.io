@@ -1,0 +1,16 @@
+.projects {
+  margin-top: 60px;
+  background-image: var(--grad);
+}
+
+.project-title {
+  margin: 20px 0 50px 0;
+  color: var(--s_color);
+  text-align: center;
+}
+
+@media (max-width: 770px) {
+  .project-title {
+    font-size: 50px;
+  }
+}
