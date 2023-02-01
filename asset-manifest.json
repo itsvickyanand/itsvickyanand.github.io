@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.fbd6b9e5.css",
-    "main.js": "/static/js/main.afe338d6.js",
+    "main.js": "/static/js/main.f3e43af4.js",
     "static/media/Vicky-Anand-Resume.pdf": "/static/media/Vicky-Anand-Resume.92c9ef7449cacf4c6049.pdf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "index.html": "/index.html",
     "main.fbd6b9e5.css.map": "/static/css/main.fbd6b9e5.css.map",
-    "main.afe338d6.js.map": "/static/js/main.afe338d6.js.map"
+    "main.f3e43af4.js.map": "/static/js/main.f3e43af4.js.map"
   },
   "entrypoints": [
     "static/css/main.fbd6b9e5.css",
-    "static/js/main.afe338d6.js"
+    "static/js/main.f3e43af4.js"
   ]
 }
